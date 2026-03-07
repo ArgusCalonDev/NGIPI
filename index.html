@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGIPI!</title>
+
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+  <h1>NGIPI!</h1>
+
+  <!-- LIST CARD -->
+  <section class="card-list" id="cardList">
+
+    <p class="small-text">Tulis mimpi atau apapun seperti sarkas dll, disini!</p>
+
+  </section>
+
+
+
+  <!-- FLOATING INPUT PANEL -->
+
+  <div class="input-panel">
+
+    <input 
+      type="text"
+      id="goalInput"
+      placeholder="Nama tujuan..."
+    >
+
+    <input
+      type="number"
+      id="desireInput"
+      placeholder="Persentase keinginan (0-100)"
+      min="0"
+      max="100"
+    >
+
+    <input
+      type="number"
+      id="moneyInput"
+      placeholder="Investasi (opsional)"
+    >
+
+    <button id="addBtn">
+      Add to List
+    </button>
+
+    <p class="small-text">
+      Isi tujuan lalu klik tombol
+    </p>
+
+  </div>
+  
+  <footer>
+    &copy; 2026 didipp (Ardhya).
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+</html>

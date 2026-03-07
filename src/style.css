@@ -1,0 +1,167 @@
+/* ===== RESET ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  padding: 40px;
+}
+
+
+
+/* ===== PAGE TITLE ===== */
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+
+
+/* ===== CARD LIST ===== */
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+
+
+/* ===== CARD ===== */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+
+
+/* ===== CARD TITLE ===== */
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+/* ===== CARD INFO TEXT ===== */
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+
+
+/* ===== PROGRESS BAR ===== */
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e6e8ec;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: #4a7cff;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+
+
+/* ===== FLOATING INPUT PANEL ===== */
+
+.input-panel {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  width: 260px;
+  background: white;
+
+  padding: 18px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+
+/* ===== INPUT FIELD ===== */
+
+.input-panel input {
+  width: 100%;
+  padding: 10px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+
+/* ===== BUTTON ===== */
+
+.input-panel button {
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4a7cff;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.input-panel button:hover {
+  background: #3a68d8;
+}
+
+
+
+/* ===== SMALL TEXT ===== */
+
+.small-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+
