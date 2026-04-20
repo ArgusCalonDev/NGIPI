@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  color: #20232a;
+  background: #f6f7fb;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #eef2f8;
+  color: #1c2129;
+  padding: 24px;
+}
+
+.page-shell {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.hero {
+  padding: 28px 24px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 14px 40px rgba(22, 30, 45, 0.08);
+}
+
+.eyebrow {
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.02;
+  margin-bottom: 12px;
+}
+
+.lead {
+  max-width: 600px;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.search-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.search-label {
+  font-weight: 600;
+  color: #334155;
+}
+
+#searchInput {
+  width: 100%;
+  border: 1px solid #d2d6dc;
+  border-radius: 14px;
+  padding: 16px 18px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#searchInput:focus {
+  border-color: #5b7fff;
+  box-shadow: 0 0 0 4px rgba(91, 127, 255, 0.12);
+}
+
+.page-list {
+  display: grid;
+  gap: 18px;
+}
+
+.page-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.page-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(91, 127, 255, 0.3);
+}
+
+.page-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.page-card p {
+  color: #556275;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.page-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: #4d68ff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.page-card a:hover {
+  background: #3f57db;
+}
+
+.hint {
+  color: #64748b;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .page-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-card a {
+    width: 100%;
+  }
+}

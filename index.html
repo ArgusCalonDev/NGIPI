@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGIPI!</title>
+  <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Selamat datang di</p>
+        <h1>NGIPI!</h1>
+        <p class="lead">Temukan halaman-halaman santai di website ini. Cari, klik, dan lanjut ngopi mimpi.</p>
+      </div>
+    </header>
+
+    <section class="search-panel">
+      <label for="searchInput" class="search-label">Cari halaman</label>
+      <input id="searchInput" type="search" placeholder="Coba: info, mimpi, halaman" autocomplete="off">
+    </section>
+
+    <section class="page-list" id="pageList">
+      <article class="page-card" data-title="Info Ngipi">
+        <div>
+          <h2>Info Ngipi</h2>
+          <p>Kenali NGIPI, cara dukung proyek, dan alasan dibuatnya halaman ini.</p>
+        </div>
+        <a href="info.html">Buka</a>
+      </article>
+
+      <article class="page-card" data-title="Nge Mimpi">
+        <div>
+          <h2>Nge Mimpi</h2>
+          <p>Halaman utama untuk menambah mimpi, sarkas, dan daftar tujuan kamu.</p>
+        </div>
+        <a href="nge-mimpi.html">Buka</a>
+      </article>
+    </section>
+
+    <p class="hint" id="noResults" hidden>Tidak ada halaman yang cocok. Coba kata kunci lain.</p>
+  </main>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
