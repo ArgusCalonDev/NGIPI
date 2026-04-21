@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  padding: 40px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#search {
+    width: 60%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fff;
+    margin-top: 30px;
+}
+
+#submit {
+    background-color: #ccc;
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    border: 5px;
+    border-color: black;
+}
+
+#submit:hover {
+    transform: scale(2, 2);
+}
+
+hr {
+    margin-top: 70px;
+}
