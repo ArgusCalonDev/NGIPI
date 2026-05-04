@@ -13,10 +13,10 @@ function filterPages(query) {
     const matches = title.includes(normalized) || description.includes(normalized);
 
     if (!normalized || matches) {
-      card.hidden = false;
+      card.style.display = '';
       visibleCount += 1;
     } else {
-      card.hidden = true;
+      card.style.display = 'none';
     }
   });
 
@@ -24,6 +24,7 @@ function filterPages(query) {
 }
 
 searchInput.addEventListener("input", (event) => {
+  console.log("input:", event.target.value);
   filterPages(event.target.value);
 });
 
