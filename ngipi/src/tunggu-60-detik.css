@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  padding: 40px;
+}
+
+hr {
+    margin-top: 200px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+#output {
+    margin-top: 70px;
+}
