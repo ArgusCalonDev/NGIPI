@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  padding: 40px;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+hr {
+    margin-top: 150px;
+}
+
+#btn { 
+    background-color: #4361ee; 
+    color: #ffffff; 
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 7px; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    cursor: pointer;  
+}
+
+#btn:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#output {
+    margin-top: 40px;
+}
