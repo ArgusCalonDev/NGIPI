@@ -22,7 +22,6 @@ body {
   padding: 28px 24px;
   background: #ffffe0;
   border-radius: 12px;
-  border: 3px dashed #ff6b9d;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -63,7 +62,6 @@ h1 {
 
 #searchInput {
   width: 100%;
-  border: 2px solid #ff6b9d;
   border-radius: 8px;
   padding: 12px 14px;
   font-size: 1rem;
