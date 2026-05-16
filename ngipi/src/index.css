@@ -4,18 +4,11 @@
   box-sizing: border-box;
 }
 
-:root {
-  color-scheme: light;
-  color: #20232a;
-  background: #f6f7fb;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
 body {
-  min-height: 100vh;
-  background: #eef2f8;
-  color: #1c2129;
-  padding: 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  padding: 40px;
 }
 
 .page-shell {
@@ -27,28 +20,32 @@ body {
 
 .hero {
   padding: 28px 24px;
-  background: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 14px 40px rgba(22, 30, 45, 0.08);
+  background: #ffffe0;
+  border-radius: 12px;
+  border: 3px dashed #ff6b9d;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .eyebrow {
-  color: #64748b;
+  color: #555;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.78rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-size: 28px;
   line-height: 1.02;
   margin-bottom: 12px;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler, sans-serif;
 }
 
 .lead {
   max-width: 600px;
-  color: #4b5563;
+  color: #333;
   font-size: 1rem;
   line-height: 1.8;
 }
@@ -59,79 +56,81 @@ h1 {
 }
 
 .search-label {
-  font-weight: 600;
-  color: #334155;
+  font-weight: 700;
+  color: #000;
+  font-size: 16px;
 }
 
 #searchInput {
   width: 100%;
-  border: 1px solid #d2d6dc;
-  border-radius: 14px;
-  padding: 16px 18px;
+  border: 2px solid #ff6b9d;
+  border-radius: 8px;
+  padding: 12px 14px;
   font-size: 1rem;
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: white;
 }
 
 #searchInput:focus {
-  border-color: #5b7fff;
-  box-shadow: 0 0 0 4px rgba(91, 127, 255, 0.12);
+  border-color: #0936ca;
+  background: #ffffcc;
+  box-shadow: 0 0 0 3px rgba(9, 54, 202, 0.15);
 }
 
 .page-list {
   display: grid;
-  gap: 18px;
+  gap: 12px;
 }
 
 .page-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 18px;
-  padding: 20px;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  gap: 14px;
+  padding: 16px 14px;
+  border-radius: 8px;
+  background: white;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .page-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(91, 127, 255, 0.3);
+  transform: scale(1.02);
 }
 
 .page-card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  font-weight: 700;
 }
 
 .page-card p {
-  color: #556275;
-  line-height: 1.6;
-  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 .page-card a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 90px;
-  padding: 11px 16px;
-  border-radius: 999px;
-  background: #4d68ff;
+  min-width: 80px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #0936ca;
   color: white;
   text-decoration: none;
-  font-weight: 600;
-  transition: background 0.2s ease;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .page-card a:hover {
-  background: #3f57db;
+  background: #0927a0;
+  transform: scale(1.08);
 }
 
 .hint {
-  color: #64748b;
+  color: #666;
   text-align: center;
   font-size: 0.95rem;
 }
