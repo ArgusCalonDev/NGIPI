@@ -31,3 +31,27 @@ header {
   transition: all 0.2s ease;
   background: #fff;
 }
+
+#btn {
+    background-color: #4361ee; 
+    color: #ffffff; 
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 7px; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    cursor: pointer;  
+}
+
+#btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#output {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+hr {
+  margin-top: 200px;
+}
