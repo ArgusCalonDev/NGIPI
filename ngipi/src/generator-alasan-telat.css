@@ -36,3 +36,7 @@ header {
 hr {
     margin-top: 300px;
 }
+
+#lists li {
+    font-size: 1.5rem;
+}

@@ -41,6 +41,10 @@ h1 {
     transform: scale(2, 2);
 }
 
+#output {
+    font-size: 3rem;
+}
+
 hr {
     margin-top: 70px;
 }

@@ -42,3 +42,7 @@ header {
     transform: scale(2);
     cursor: pointer;
 }
+
+#output {
+    font-size: 3rem;
+}

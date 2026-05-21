@@ -80,6 +80,10 @@ h3 {
   background: #3a0ca3;
 }
 
+#output {
+    font-size: 3rem;
+}
+
 hr {
     margin-top: 100px;
 }
