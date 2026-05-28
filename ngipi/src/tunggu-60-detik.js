@@ -1,6 +1,11 @@
 const output = document.getElementById('output');
+const suara = new Audio('/minecraft-xp-sfx.mp3');
 
-setTimeout((timeout) => {
+function putarSuara() {
+    suara.play();
+}
+
+setTimeout(() => {
     output.textContent = 'Selamat.. kamu sabar';
-    console.log(timeout);
+    putarSuara();
 }, 60000);
