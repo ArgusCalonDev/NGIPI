@@ -34,7 +34,7 @@ hr {
     transform: scale(1.2, 1.2);
 }
 
-#output {
+#count {
     margin-top: 40px;
     font-size: 3rem;
 }
