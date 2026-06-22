@@ -19,7 +19,8 @@ export default defineConfig({
         pendeteksiOverthinking: resolve(__dirname, 'pendeteksi-overthinking.html'),
         kalkulator: resolve(__dirname, 'kalkulator.html'),
         klik1000Kali: resolve(__dirname, 'klik-1000-kali.html'),
-        janganDipencet: resolve(__dirname, 'jangan-dipencet.html')
+        janganDipencet: resolve(__dirname, 'jangan-dipencet.html'),
+        nytb: resolve(__dirname, 'nilai-yang-tak-bernilai.html')
       },
     },
   },
