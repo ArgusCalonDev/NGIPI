@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  padding: 40px;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+hr {
+    margin-top: 150px;
+}
+
+#nilai {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#buy {
+    background-color: #4361ee;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 87%;
+    margin-bottom: 10%;
+}
+
+#buy:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#sell {
+    background-color: #2b2d42;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+#sell:hover {
+    transform: scale(1.2, 1.2);
+}
