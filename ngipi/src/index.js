@@ -1,7 +1,26 @@
 const searchInput = document.getElementById("searchInput");
 const pageList = document.getElementById("pageList");
 const noResults = document.getElementById("noResults");
+const randomBtn = document.getElementById("randomBtn");
 const pageCards = Array.from(pageList.querySelectorAll(".page-card"));
+console.log(randomBtn);
+
+const pages = [
+  "pembuat-keputusan.html",
+  "jangan-dipencet.html",
+  "tunggu-60-detik.html",
+  "hari-ini-kebuang-berapa.html",
+  "nilai-yang-tak-bernilai.html",
+  "kalkulator.html",
+  "cara-menjadi-sukses-instan.html",
+  "pendeteksi-overthinking.html",
+  "klik-1000-kali.html",
+  "tombol-random.html",
+  "generator-alasan-telat.html",
+  "search-engine.html",
+  "real-login.html",
+  "nge-mimpi.html"
+];
 
 function filterPages(query) {
   const normalized = query.trim().toLowerCase();
@@ -29,3 +48,9 @@ searchInput.addEventListener("input", (event) => {
 });
 
 filterPages("");
+
+randomBtn.addEventListener('click', () => {
+  const randomIndex = Math.floor(Math.random() * pages.length);
+  const randomPage = pages[randomIndex];
+  window.open(randomPage);
+});
