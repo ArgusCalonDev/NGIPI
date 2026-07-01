@@ -3,7 +3,18 @@ const pageList = document.getElementById("pageList");
 const noResults = document.getElementById("noResults");
 const randomBtn = document.getElementById("randomBtn");
 const quote = document.getElementById("quote");
+const teksStatus = document.getElementById('server-gabut');
 const pageCards = Array.from(pageList.querySelectorAll(".page-card"));
+
+const statusServer = [
+  "🟢 Online",
+  "🟢 Server sedang gabut",
+  "🟢 Server sedang tidur",
+  "🟢 Server sedang main game",
+  "🔴 Server sedang ngambek",
+  "🟢 Server sedang BAB",
+  "🔴 Server sedang marah besar"
+]
 
 const quotes = [
   "Mangga sedang menunggu konfirmasi.",
@@ -69,6 +80,13 @@ function randomizeQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   if (quote) quote.textContent = randomQuote;
 }
+
+function randomizeStatus() {
+  const randomStatus = statusServer[Math.floor(Math.random() * statusServer.length)];
+  teksStatus.textContent = randomStatus;
+}
+
+randomizeStatus();
 
 searchInput.addEventListener("input", (event) => {
   console.log("input:", event.target.value);

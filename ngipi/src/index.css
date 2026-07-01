@@ -206,3 +206,13 @@ h1 {
   width: 20px;
   height: 7px;
 }
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#server-gabut {
+  display: block;
+}
