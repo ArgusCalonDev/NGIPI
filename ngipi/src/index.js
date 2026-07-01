@@ -2,8 +2,31 @@ const searchInput = document.getElementById("searchInput");
 const pageList = document.getElementById("pageList");
 const noResults = document.getElementById("noResults");
 const randomBtn = document.getElementById("randomBtn");
+const quote = document.getElementById("quote");
 const pageCards = Array.from(pageList.querySelectorAll(".page-card"));
-console.log(randomBtn);
+
+const quotes = [
+  "Mangga sedang menunggu konfirmasi.",
+  "Bautmu sudah matang.",
+  "Kipas angin sedang menghafal puisi.",
+  "Tolong jangan ganggu batu. Dia lagi online.",
+  "Keyboard sedang mandi.",
+  "Sepatu kiri sedang wawancara kerja.",
+  "Kecap sedang mengejar angin.",
+  "Pohon nomor delapan salah jurusan.",
+  "Kalender sedang merenung.",
+  "Roti tawar sedang belajar berbicara.",
+  "Kursi VIP untuk ikan terbang.",
+  "Pensilmu sudah di-ACC semangka.",
+  "Mesin fotokopi sedang menggoreng awan.",
+  "Amplop itu sebenarnya pemalu.",
+  "Lift sedang berpamitan kepada rumput.",
+  "Koin receh sedang sidang skripsi.",
+  "Printer sedang fotosintesis.",
+  "Batu bata sedang merindukan laut.",
+  "Jam dinding baru pulang dari Mars.",
+  "Sandal kanan sedang magang di bulan."
+];
 
 const pages = [
   "pembuat-keputusan.html",
@@ -42,6 +65,11 @@ function filterPages(query) {
   noResults.hidden = visibleCount > 0;
 }
 
+function randomizeQuote() {
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  if (quote) quote.textContent = randomQuote;
+}
+
 searchInput.addEventListener("input", (event) => {
   console.log("input:", event.target.value);
   filterPages(event.target.value);
@@ -54,3 +82,5 @@ randomBtn.addEventListener('click', () => {
   const randomPage = pages[randomIndex];
   window.open(randomPage);
 });
+
+document.addEventListener('DOMContentLoaded', randomizeQuote);
